@@ -5,35 +5,48 @@
   margin: 0;
   box-sizing: border-box;
 }
-body{
-    height: 2000px;
-}
+
 /* reusable styles */
-.btn-primary{
-    color: #ffffff;
-    font-size: 18px;
-    background-color: #FF5959;
-    padding: 10px 12px;
-    border: 0;
-    border-radius: 5px;
-    cursor: pointer;
+.btn-primary {
+  color: #ffffff;
+  font-size: 18px;
+  background-color: #ff5959;
+  padding: 10px 12px;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.heading2 {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 54px;
+  color: #121212;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.section-description {
+  font-size: 18px;
+  line-height: 28px;
+  color: #707070;
+  text-align: center;
 }
 
 /* header styles */
 .header {
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url("../images/donation0.jpg") no-repeat center;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
+    url("../images/donation0.jpg") no-repeat center;
   background-size: cover;
   height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.header-container{
-    text-align: center;
-    background: rgb(0, 0, 0); 
-    background: rgba(0, 0, 0, 0.5); 
-    padding: 20px 50px;
-    border-radius: 5px;
+.header-container {
+  text-align: center;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px 50px;
+  border-radius: 5px;
 }
 .header-title {
   color: #ffffff;
@@ -47,5 +60,185 @@ body{
   line-height: 28px;
   color: #ffffff;
   margin-bottom: 30px;
-  max-width:  100ch;
+  max-width: 100ch;
+}
+
+/* donate section styles */
+main {
+  display: flow-root;
+}
+.max-width {
+  display: flow-root;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.donate {
+  text-align: center;
+  max-width: 940px;
+  margin: 100px auto 0;
+  padding: 20px 0;
+}
+
+.amount {
+  margin: 60px 0;
+}
+.amount > span {
+  background: #fafafa;
+  border-radius: 5px;
+  color: #707070;
+  font-weight: 700;
+  font-size: 30px;
+  padding: 45px 25px;
+  display: inline-block;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+.amount > span:nth-child(2) {
+  background: #ffeeee;
+  border: 2px solid #ff5959;
+}
+.amount > span:hover {
+  background: #ffeeee;
+  border: 2px solid #ff5959;
+}
+
+.amount > * + * {
+  margin-left: 22px;
+}
+.taka {
+  border: none;
+  padding: 10px 5px;
+  text-align: center;
+  color: gray;
+  font-size: 18px;
+  border-radius: 9999px;
+}
+.taka:focus {
+  outline: 1px solid gray;
+}
+.donate .btn-primary {
+  margin-top: 20px;
+}
+.donate hr {
+  border: 1px solid #dadada;
+}
+
+/* our donate plan styles */
+.donate-plan {
+  margin-top: 100px;
+}
+
+.card-container {
+  display: flex;
+  gap: 25px;
+  margin-top: 30px;
+}
+.card {
+  padding: 50px 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 5px;
+}
+.card > * {
+  text-align: left;
+}
+.card:nth-child(1) {
+  background: rgba(79, 157, 166, 0.1);
+}
+.card:nth-child(2) {
+  background: rgba(255, 89, 89, 0.1);
+}
+.card:nth-child(3) {
+  background: #fff4d6;
+}
+.card img {
+  width: 60px;
+  height: 50px;
+}
+.heading3 {
+  font-weight: 600;
+  font-size: 24px;
+  color: #121212;
+}
+
+/* how to contribute styles */
+.contribute {
+  margin-top: 100px;
+}
+.contribute .first,
+.second {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+}
+.contribute img {
+  max-width: 450px;
+  max-height: 570px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.contribute .contribute-info > * {
+  text-align: left;
+}
+
+.contribute .first .contribute-info p {
+  margin-bottom: 20px;
+}
+.contribute .second {
+  margin-top: 70px;
+}
+
+/* update styles */
+.update {
+  max-width: 940px;
+  margin: 100px auto 50px auto;
+}
+.mail {
+  background-color: #fff4d6;
+  padding: 75px 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  border-radius: 5px;
+}
+.update .section-description {
+  width: 80ch;
+  margin: 0 auto;
+}
+.mail input {
+  padding: 15px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  font-size: 18px;
+}
+.mail .mail-btn {
+  padding: 15px;
+  border: none;
+  background-color: #ff5959;
+  border-radius: 0 5px 5px 0;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+/* footer styles */
+footer {
+  background-color: #1e1e1e;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+}
+footer h2 {
+  letter-spacing: 0.5px;
+  color: #ff5959;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 54px;
+}
+footer p {
+  color: #d9dbe1;
 }
